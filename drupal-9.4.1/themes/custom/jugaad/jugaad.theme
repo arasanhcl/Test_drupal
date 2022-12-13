@@ -1,0 +1,8 @@
+<?php
+/**
+ * Implements hook_preprocess_node().
+ */
+function jugaad_preprocess_node(&$variables) {
+  $qr_codeblock = \Drupal\block\Entity\Block::load('qrcodeblock')->getPlugin()->build();
+  $variables['qrcode_block'] = $qr_codeblock;
+}

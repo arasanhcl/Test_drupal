@@ -1,0 +1,12 @@
+<?php
+function qr_code_theme($existing, $type, $theme, $path) {
+    return [
+    'qr_code_page' => [
+      'variables' => [
+        'qr_code_block' => NULL,
+        'field_app_purchase_link' => NULL,
+        'random_number' => NULL,
+      ],
+    ],
+  ];
+}

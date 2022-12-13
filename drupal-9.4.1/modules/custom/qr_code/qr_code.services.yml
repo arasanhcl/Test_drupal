@@ -1,0 +1,3 @@
+services:
+ qr_code.test:
+   class: Drupal\qr_code\HelloServices
